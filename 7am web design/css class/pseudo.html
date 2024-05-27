@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo class and elements</title>
+    <style>
+      ul li {
+        display: inline-block;
+        margin-right: 50px;
+        position: relative;
+      }
+      ul li:last-child {
+        margin-right: 0px;
+      }
+      ul li:hover::after {
+        width: 100%;
+      }
+      ul li::after {
+        content: "";
+        height: 5px;
+        width: 50px;
+        background-color: red;
+        position: absolute;
+        bottom: -5px;
+        left: 0px;
+      }
+      p::first-letter {
+        font-size: 50px;
+        font-style: italic;
+        color: red;
+      }
+      *::selection {
+        background-color: red;
+      }
+      p::first-line{
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
+      repudiandae quo qui, perspiciatis eum beatae minima! Repellendus ex culpa
+      repudiandae consectetur natus sequi adipisci iste possimus, voluptates
+      quasi excepturi facere hic dolor iusto ipsum delectus explicabo quibusdam,
+      exercitationem ipsa doloremque porro odit. Necessitatibus, accusantium?
+      Optio eum earum quos suscipit nihil?
+    </p>
+    <ul>
+      <li>Home</li>
+      <li>Services</li>
+      <li>About us</li>
+      <li>contact us</li>
+    </ul>
+  </body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .card figure {
+        position: relative;
+        width: fit-content;
+      }
+      .card figure::after {
+        content: "";
+        height: 30%;
+        width: 100%;
+        position: absolute;
+        left: 0px;
+        bottom: 0px;
+        background-image: linear-gradient(to top, #000000aa, #00000000);
+      }
+      .card figcaption {
+        position: absolute;
+        bottom: 20px;
+        display: block;
+        width: 100%;
+        text-align: center;
+        color: white;
+        font-size: 20px;
+        z-index: 9;
+        font-weight: 600;
+      }
+      .box{
+        height: 500px;
+        border: 1px solid red;
+        background:url("images/diamond_pattern.jpg")  ;
+        
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div class="card">
+      <figure>
+        <img src="images/user.jpg" alt="" />
+        <figcaption>Hari Bhadur</figcaption>
+      </figure>
+    </div> -->
+    <div class="box"></div>
+  </body>
+</html>

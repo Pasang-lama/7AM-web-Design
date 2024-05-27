@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form tag</title>
+  </head>
+  <body>
+    <form action="">
+      <!-- type text  -->
+      <label for="fname">Name</label> <br />
+      <input type="text" id="fname" placeholder="Enter your name" required />
+      <br />
+      <!-- type number  -->
+      <label for="number">Number</label> <br />
+      <input
+        type="number"
+        id="number"
+        placeholder="Enter your number"
+        min="4"
+        max="10"
+      />
+      <br />
+
+      <!-- type email  -->
+      <label for="email">email</label> <br />
+      <input type="email" id="email" placeholder="Enter your email" /> <br />
+
+      <!-- type password -->
+      <label for="password">password</label> <br />
+      <input type="password" id="password" placeholder="Enter your password" />
+      <br />
+
+      <!-- type date -->
+      <label for="date">DoB</label> <br />
+      <input type="date" id="date" /> <br />
+
+      <!-- type time  -->
+      <label for="time">Time</label> <br />
+      <input type="time" id="time" /> <br />
+
+      <!-- type file  -->
+      <label for="file">file</label> <br />
+      <input type="file" id="file" /> <br />
+
+      <!-- type radio  -->
+      <input type="radio" name="gender" id="male" />
+      <label for="male">Mallkdafdsfasde</label>
+      <input type="radio" name="gender" id="fmale" />
+      <label for="fmale">Female</label> <br />
+
+      <!-- type select  -->
+      <label for="select">Course:</label>
+      <select id="select">
+        <option value="">select Course</option>
+        <option value="" disabled>Python</option>
+        <option value="">JAVA</option>
+        <option value="">Web Design</option>
+      </select>
+      <br />
+
+      <input type="checkbox" name="course" id="java" />
+      <label for="java">Java</label> <br />
+      <input type="checkbox" name="course" id="Python" />
+      <label for="Python">Python</label> <br />
+      <input type="checkbox" name="course" id="Web" />
+      <label for="Web">Web</label> <br />
+      <input type="checkbox" name="course" id="C" />
+      <label for="C">C programming</label> <br />
+
+      <button type="submit">Submit</button>
+
+
+    </form>
+  </body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mega menu</title>
+    <style>
+      header ul {
+        list-style: none;
+      }
+      header ul li {
+        display: inline-block;
+        margin-right: 50px;
+        position: relative;
+      }
+      header ul li ul {
+        position: absolute;
+        left: 0px;
+        display: none;
+        background-color: white;
+        border: 1px solid gray;
+        padding: 5px;
+      }
+      header ul li ul li {
+        display: block;
+        white-space: nowrap;
+        margin-right: 0px;
+        padding-bottom: 5px;
+      }
+      header ul li:hover ul {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <ul>
+        <li><a href="">Home</a></li>
+        <li>
+          <a href="">About us</a>
+          <ul>
+            <li><a href="">Our Company</a></li>
+            <li><a href="">Our history</a></li>
+            <li><a href="">Messages from CEO</a></li>
+            <li><a href="">Our Team</a></li>
+          </ul>
+        </li>
+        <li><a href="">Services </a></li>
+        <li><a href="">Contact us</a></li>
+      </ul>
+    </header>
+  </body>
+</html>
